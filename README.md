@@ -1,10 +1,18 @@
+- Forms (form_for => HTML) 
+ - collection_select (4 arguments)
+- Validations
+- strong params => errors
+
+- redirects 
+  signups => camper_path(@signup.camper.id)
+
 ## The Domain
 Congratulations! You have been hired by Access Camp and for your first job, you have been tasked with building out a website to log campers with their activities.
 
 A `camper` can participate in many `activities` and an `activity` can have many `campers` participating in it.
 
 Visiting `/campers` will show the index page of all the campers and visiting `/activities` will go to the index page for all the `activities`.
-Currently, we don't have any way to associate the two, so consider the relationship and think about how a `camper` can `signup` for an `activity`!
+Currently, we don't have any way to associate the two, so consider the relationship and think about how a `camper` can `camper_activity` for an `activity`!
 
 ## The Deliverables
 
